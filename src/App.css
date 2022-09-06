@@ -83,3 +83,23 @@ ul {
   color: #22c55e;
   border: 1px solid #22c55e;
 }
+
+/* Item */
+
+.product {
+  display: block;
+  width: 300px;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Detail */
+
+.container{
+  width: 98%;
+  margin: auto;
+}

@@ -12,4 +12,4 @@ Las tecnologías utilizadas en este proyecto son:
 ✅ FlexBox para la estilización CSS de los elementos
 ✅ React-router-dom para el routing del proyecto
 
-by: Luciano Villalba 
+# by: Luciano Villalba 

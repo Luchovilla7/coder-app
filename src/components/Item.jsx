@@ -1,8 +1,11 @@
 import "../App.css";
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../cartcontext/CartContext";
 
 const Item = ({info}) => {
+    const nombre = useContext(CartContext);
+
     return (
         <div className="product">
                 <img src={info.image} alt="producto" />

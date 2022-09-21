@@ -5,14 +5,14 @@ import ItemCart from "./ItemCart";
 
 
 const Cart = () =>{
-    const { cart, totalPrice } = useCartContext([]);
+    const { cart, totalPrice } = useCartContext();
 
     if (cart.length === 0) {
         return (
-            <>
+            <div className="cartEmpty">
                 <p>No hay productos en el carrito</p>
                 <Link to='/'>Hacer compra</Link>
-            </>
+            </div>
         );
     }
 

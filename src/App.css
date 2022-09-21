@@ -164,12 +164,20 @@ ul {
 .itemCart {
   display: flex;
   border-bottom: 1px solid gray;
-  max-width: 50px;
-  margin: 2rem auto;
+  width: 120px;
+  margin: 7rem auto;
 }
 
 .itemCart img {
-  width: 200px;
-  margin-right: 1rem;
+  width: 250px;
+  margin-right: 2rem;
 }
 
+.description, p {
+  width: 200px;
+  padding: 5px;
+}
+
+.cartEmpty{
+  margin-top: 180px;
+}

@@ -6,6 +6,7 @@ export const useCartContext = () => useContext(CartContext);
 
 const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]); 
+    console.log('carrito: ', cart);
 
     const addProduct = (item, quantity) => {
         if (isInCart(item.id)) {
@@ -13,7 +14,7 @@ const CartProvider = ({children}) => {
                 return product.id === item.id ? { ...product, quantity: product.quantity + quantity} : product
             }));
         } else {
-            setCart ([...cart,{ ...item, quantity}]);
+            setCart ([...cart, { ...item, quantity}]);
         }
     }
     

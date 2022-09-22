@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1,300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 /*Navbar*/
 header{
   background-color: #0f172a;
   color: #e2e8f0;
-  padding: 20px;
+  padding: 15px;
 }
 
 .header__content {
@@ -23,7 +30,8 @@ header .container {
 
 h3 {
   color: #22c55e;
-  font-size: 21px;
+  font-size: 28px;
+  font-family: 'Ranchers', cursive;
 }
 a {
   text-decoration: none;
@@ -38,7 +46,7 @@ ul {
 }
 
 .content__navbar li {
-  margin: 0 15px;
+  margin: 5px 15px 0;
 }
 
 .content__navbar li a {
@@ -49,6 +57,10 @@ ul {
 .content__navbar li a:hover{
   color: #22c55e;
   text-decoration: underline;
+}
+
+.cart-cont span {
+ margin: 5px;
 }
 
 /*contador*/
@@ -163,21 +175,68 @@ ul {
 
 .itemCart {
   display: flex;
-  border-bottom: 1px solid gray;
-  width: 120px;
-  margin: 7rem auto;
+  width: 980px;
 }
 
 .itemCart img {
-  width: 250px;
-  margin-right: 2rem;
+  width: 280px;
+  margin-right: 1rem;
 }
 
 .description, p {
-  width: 200px;
+  font-size: 20px;
+  width: 370px;
   padding: 5px;
 }
 
-.cartEmpty{
+.description, button{
+  padding: 5px 10px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.cartDetail .empty {
   margin-top: 180px;
+  text-align: center;
+}
+
+.cartDetail{
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.check {
+  position: fixed;
+  margin: 15px;
+  padding: 10px 0;
+  left: 75%;
+  background-color: #22c55e;
+  border: 2px solid #0f172a;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.check p {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 12px;
+}
+
+.check button {
+  display: flex;
+  flex-direction: column;
+  margin: 2px 120px;
+  padding: 10px 15px;
+  background-color: #0f172a;
+  color: #22c55e;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.check button:hover{
+  background-color: #22c55e;
+  color: #0f172a;
+  border: 2px solid #0f172a;
 }

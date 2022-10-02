@@ -241,6 +241,34 @@ ul {
   border: 2px solid #0f172a;
 }
 
+.empty p {
+  margin: 15px;
+}
+
+.empty a {
+  background-color: #0f172a;
+  color: #22c55e;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.detail a {
+  background-color: #0f172a;
+  color: #22c55e;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.itemCart button {
+  background-color: #22c55e;
+  color: #0f172a;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 500px) {
 
   header {
